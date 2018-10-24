@@ -1,0 +1,10 @@
+//coulour variables
+$header-background: #000;
+$color-white: #fff;
+$color-brand__green: #38e0ab;
+
+@mixin mobile{
+  @media (max-width: 768px){
+    @content;
+  }
+}

@@ -1,0 +1,63 @@
+@import 'scss/partials/variables';
+
+.hero-slider {
+  background-image: linear-gradient(to bottom, #f9f8f8, #e3e2e2, #cdcdcd, #b8b8b8, #a3a3a3);
+}
+
+.hero-slider__chair {
+  background-image: url('../images/black_chair.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+
+}
+
+//arrows
+.hero-slider_arrow {
+  font-size: 50px;
+  font-weight: bold;
+  color: $color-brand__green;
+  display: flex;
+  align-items: center;
+  @include mobile {
+    display: none;
+  }
+}
+.hero-slider_arrow--right {
+  @extend .hero-slider_arrow;
+  text-align: right;
+  justify-content: flex-end;
+
+}
+
+//headline
+.hero-slider__article {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-article__paragraph {
+  padding: 30px;
+}
+.hero-article__headline {
+  text-transform: uppercase;
+}
+.hero-article__headline span {
+  color: $color-brand__green;
+}
+
+//article__button
+
+.hero-article__button {
+  background-color: $color-brand__green;
+  color: $color-white;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 0;
+  font-size: 20px;
+  box-shadow: 1px 1px 2px 3px grey;
+}
